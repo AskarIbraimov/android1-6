@@ -49,6 +49,8 @@ public class FirstFragmentAdapter extends RecyclerView.Adapter<FirstFragmentAdap
         public void onBind(Coin coin) {
           binding.coinName.setText(coin.getCoinName());
           binding.coinCost.setText(coin.getCoinCost());
+          binding.coinImage.setImageResource(coin.getImageCoin());
+
         }
     }
 }
